@@ -1,0 +1,15 @@
+.sidebar {
+    height: 100%; /* Full height */
+    width: 200px; /* Set a specific width */
+    position: fixed; /* Fix the position on the screen */
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+main {
+    margin-left: 200px; /* Push the main content to the right of the sidebar */
+    padding: 1px 16px;
+}
