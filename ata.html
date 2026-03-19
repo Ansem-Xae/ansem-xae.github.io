@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <meta name="color-scheme" content="light dark">
+    <title>ATA Express - Ansem Seeker of Darkness</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/psx.css">
+    <script src="assets/useful.js"></script>
+</head>
+
+<body onload="document.getElementById('default').click();">
+<nav class="sidebar">
+    <br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ata.html">ATA Express</a></li>
+        <li><a href="dspico.html">DSPico</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>  
+    <main>
+	<div class="vl2">
+    <h1 div align="center"><font color="#006FCD"> ATA Express</font> </h1>
+    <h4 div align="center"><font color="#006FCD">by PhenomMod</font> </h4>
+    
+    <hr>
+    <nav class="navbar3">
+    <ul class="nav-links2">
+        <li><a href="https://store.phenommod.com/product/ata-express/" target="_blank" rel="noopener noreferrer">Phenom Mod Store<img src="assets/img/pmico.png"></a> </li>
+        <li><a href="https://youtu.be/IFVDY75tR5A?si=HtGC1Y9Y0D7Aogog" target="_blank" rel="noopener noreferrer">MachoNacho Review<img src="assets/img/yt.png"></a></li>
+    </ul>
+</nav>
+<br>
+<mb>
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'desc')">About</button>
+  <button class="tablinks" id="default" onclick="opentab(event, 'psx')">PSX DESR Install </button>
+</div>
+
+<!-- ATA EXPRESS OVERVIEW -->
+
+<div id="desc" class="tabcontent">
+	<h2 align="center"><font color="#006FCD"> ATA Express </font></h2>
+    <hr>
+	    <h2>Description:</h2>
+    <p>ATA Express is an SDIO to IDE (PATA) emulator. Currently, it is STRICTLY a hard disk emulator, but it can and will be expanded to CD-ROM/DVD emulation eventually.<br>
+<br>
+You can purchase it from Phenom Mod <a href="https://store.phenommod.com/product/ata-express/" target="_blank" rel="noopener noreferrer">Here</a>, otherwise, if you are in the EU, you can purchase from <a href="https://shiraseal.com/product/ata-express/" target="blank" rel="noopener noreferrer">Here</a>.<br>
+<br>
+Features:
+<ul>
+    <li>Up to 2TB microSD</li>
+    <li>LBA28 support</li>
+    <li>LBA48 support</li>
+    <li>CHS mode</li>
+    <li>UDMA6 capable</li>
+    <li>Master/Slave select for IDE interface</li>
+</ul>
+<br>
+What’s so special about this product compared to current solutions on the market? Nearly every all SD to IDE adapters on the market use the FC1307A chipset. It comes with a buggy firmware, limited to LBA28 (128GB max) compatibility. This doesn't and is upgradable.
+<br>
+<br>
+Some use cases include:
+<ul>
+    <li>Finally max out a PS2 70K. Most mods use the SD to IDE adapters with the 128GB limit</li>
+    <li>Portable OG Xbox</li>
+    <li>Retain the disc drive in Dreamcast</li>
+    <li>Retro PC’s, with CF becoming a rare storage solution, this is another solid state option</li>
+    <li>PSX DESR <B><I><font color="orange">All models should now be supported from May-2026</font></I></B></li>
+</ul>
+</p>
+</div>
+
+<!-- ATA EXPRESS PSX INSTALL -->
+
+<div id="psx" class="tabcontent">
+	<h1 align="center"><font color="#006FCD"> PSX DESR INSTALL </font></h1>
+	<hr>
+    <p align="center"><font color="#003087"><s>Rule 0 of PSX Homebrew: The console is a bastard</s></font></p>
+    <h2 align="center"><font color="#006FCD"> PSX ATA Express - NULL KEY INSTALL</font></h2>
+    <p> If you wish to use your own console backup and HDDID, you will be required to follow Nroach44's full written guide <a href="https://blog.nroach44.id.au/instructional-psx-ataexpress.html" target="_blank" rel="noopener noreferrer">HERE</a>. I recommend following that guide as it includes images and is being constantly updated. I also highly suggest reading their other information about the PSX <a href="https://blog.nroach44.id.au/011-sony-psx.html" target="_blank" rel="noopener noreferrer">here.</a><br>A big thanks to them for letting me use the section I have below.</p>
+    <h3><font color="#006FCD"> PREREQUISITES </font></h3>
+    <hr>
+    <ul>
+        <li>A PSX DESR Console</li>
+        <li>A memory card with <a href="https://ps2homebrewstore.com/exploits/loadbooter/" target="_blank" rel="noopener noreferrer">FMCB or PSBBL installed</a> on it.</li>
+        <li>An ATA Express from PhenomMod</li>
+        <li>A MicroSD Card/MicroSD Express Card</li>
+        <li>A USB Drive in Fat32 format</li>
+        <li>A PC</li>
+    </ul>
+    <p>
+    <h3><font color="#006FCD"> Guide </font></h3>
+    <hr>
+    <ol>
+        <li>Carefully install the ATA Express with SD Card into your PSX</li>
+        <li>Download the re-install tool for your console version:<ul>
+            <li>PSX1: <a class="reference external" href="https://nroach44.id.au/upl/psx_upd-repart/psx1_v1.31_JP.rework.7z" target="_blank" rel="noopener noreferrer">PSX1_v1.31_JP.rework.7z</a></li>
+            <li>PSX2: <a class="reference external" href="https://nroach44.id.au/upl/psx_upd-repart/psx2_v2.11_JP.rework.7z" target="_blank" rel="noopener noreferrer">PSX1_v2.11_JP.rework.7z</a></li>
+            <small>These links may be updated to a new script and tool soon</small>
+            <br><br>
+             <img src="assets/img/psxgen.png"><br>
+        <small><font color="#003087">Here is a handy table to tell if you have a PSX1 or PSX2</font></small><br>
+        </ul>
+       <br>
+        </li>
+    <li>Extract it to the root of your USB drive</li>
+    <li>Boot your FMCB / PSBBL Memory Card into a uLaunchELF variant</li>
+    <li>Browse to <cite>mass:/</cite> and launch <cite>HDDTOOL.ELF</cite></li>
+    <li>Come back an hour later or so and the system will have rebooted. You'll need to remove your Memory Card and turn off, then back on, the machine.</li>
+    <li>It <strong><i>should</i></strong> boot into the XMB.</li>
+    <li>You'll likely be missing the channels (including the DV channel on 7500/7700) in the TV section. To get them back, go through the setup wizard (the egg cracking icon) from the settings section.</li>
+    </ol>
+</p>
+<hr>
+<p> A huge thanks to NRoach44 for the original written guide, which I recommmend checking out from the link at the start of this section, PhenomMod for the ATA Express, and everyone in the discord server that has been developing and testing things for this stubborn console </p>
+<br>
+</div>
+
+<br>
+<br>
+<h2> Resources/References/Credits</h2>
+<hr>
+<a href="https://discord.com/invite/phenommod" target="_blank" rel="noopener noreferrer"><img src="assets/img/pmico.png"></a> - PhenomMod<br>
+<a href="https://www.reddit.com/r/PSXDVR/" target="_blank" rel="noopener noreferrer"><img src="assets/img/reddit.png"></a> - Reddit<br>
+</mb>
+</main>
+<br>
+</hr>
+<footer>
+	 <small>
+	 	<p>Website last updated Apr-2026. <br>
+	 	&copy; 2026 Ansem - Seeker of Darkness</p>
+	 </small>
+</footer>
+</body>
+</html>

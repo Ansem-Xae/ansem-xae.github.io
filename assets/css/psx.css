@@ -1,0 +1,167 @@
+/* Light Theme (Default) */
+:root {
+  --bg-color: #ffffff; /* White background */
+  --text-color: #000000; /* Black text */
+  --link-color: #3498db; /* Blue link color */
+  --theme-border-color: #555; /* Default border color */
+}
+/* Dark Theme Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #e0e0e0; /* Light text */
+    --link-color: #2980b9; /* Slightly darker blue link color */
+    --theme-border-color: #bbb;
+  }
+}
+
+ /*Default styles for all screens (often desktop-first or mobile-first) */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Styles for screens smaller than 1020px */
+@media screen and (max-width: 1020px) { #container, #header, #content, #footer { float: none; width: auto; } #subtitle, #share, #slider, #sidebar{ display:none; } p{ font-size: 2em; } }
+
+body {
+  /* Apply the variables */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+}
+
+
+
+hr {
+  color: #B3B4B9;
+}
+
+.sidebar {
+    height: 100%; /* Full height */
+    width: auto; /* Set a specific width */
+    position: fixed; /* Fix the position on the screen */
+    top: .5%;
+    left: .5%;
+    /*background-color: #333;*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 1%;
+}
+.sidebar ul {
+  list-style-type: none; /* Removes the default bullet points */
+  margin: 0;
+  padding: 0;
+  width: auto; /* Sets a fixed width for the bar */
+  background-color: #333;
+}
+
+.sidebar li a {
+  display: block; /* Make the whole area clickable and styleable */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 8px 16px; /* Adds space inside the links */
+  text-decoration: none; /* Removes the default underline */
+  border-bottom: 1px solid #ccc; /* Optional: adds separation lines */
+    font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+
+}
+/* Change the link and background color on hover */
+.sidebar li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 2px solid #fdfdfd;
+  background-color: inherit;
+  height: ;/* Defines the length of the line */
+  margin: 0px auto;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  gap: 1%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  border: solid #003087;
+  background-color: #006FCD;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  padding: 10px 20px;
+}
+
+  .vl {
+    border-left: 3px solid #d3025e; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    overflow-x: hidden; /* Disable horizontal scroll */
+  }
+  .vl2 {
+    border-left: 3px solid #006FCD; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+        overflow-x: hidden; /* Disable horizontal scroll */
+  }
+
+
+.nav-links2 {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    gap: 1%;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+}
+.nav-links2 li a {
+    display: block; /* Make the whole area clickable and styleable */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 8px 8px; /* Adds space inside the links *//* Space around the text */
+    text-decoration: none; /* Remove underlines */
+    font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+}
+.nav-links2 li a:hover {
+    background-color: #003087; /* Change background on hover */
+    color: black;
+   cursor: pointer;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #003087;
+  border: 3px solid #006FCD;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #003087;
+    border: 3px solid #006FCD;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid #fff;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+}

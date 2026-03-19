@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <meta name="color-scheme" content="light dark">
+    <title>DSpico - Ansem Seeker of Darkness</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/tabs.css">
+    <script src="assets/useful.js"></script>
+</head>
+
+<body onload="document.getElementById('default').click();">
+<nav class="sidebar">
+    <br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ata.html">ATA Express</a></li>
+        <li><a href="dspico.html">DSPico</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+</nav>  
+    <main>
+	<div class="vl2">
+    <h1 div align="center"><img src="assets/img/pico.png"> DSPico by LNH Team! <img src="assets/img/pico.png"> </h1>
+    <hr>
+    <p>As of now I have stopped uploaded my DSPico files on archive.org and have started using my own site here and mediafire.<br>
+    Find the links below to the different firmwares and the guide to chose the correct firmware for your use case, as well as the SD Card files.<br><br>I've included some handy links below:</p>
+    <nav class="navbar2">
+    <ul class="nav-links">
+        <li><a href="https://www.lnh-team.org/" target="_blank" rel="noopener noreferrer">LNH Team <img src="assets/img/lnhico.jpeg"></a></li>
+        <li><a href="https://www.mediafire.com/folder/33xl8twzem075/Latest" target="_blank" rel="noopener noreferrer">Latest Firmware <img src="assets/img/cpu_flash.png"></a></li>
+  		<li><a href="https://www.mediafire.com/file/ajo0cd19b6ogiqh/SD_Files_-_v1.4.1.7z/file" target="_blank" rel="noopener noreferrer">SD Files <img src="assets/img/sd_card.png"> </a></li>      
+        <li><a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">Emulators Setup <img src="assets/img/sanrax.png"></a></li>
+        <li><a href="https://themes.flashcarts.net/pico/" target="_blank" rel="noopener noreferrer">DSpico Themes <img src="assets/img/r4.png"></a></li>
+        <li><a href="https://scaletta.github.io/PicoCover/" target="_blank" rel="noopener noreferrer">Pico Cover <img src="assets/img/pico2.png"></a></li>
+    </ul>
+</nav>
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'byo')">DSpico BYO</button>
+  <button class="tablinks" onclick="opentab(event, 'ir')">DSpico_IR</button>
+  <button class="tablinks" id="default" onclick="opentab(event, 'Firmware')">Firmware</button>
+  <button class="tablinks" onclick="opentab(event, 'SD')">Sd Files</button>
+  <button class="tablinks" onclick="opentab(event, 'ntr')">NTR Boot Mode</button>
+  <button class="tablinks" onclick="opentab(event, 'FAQ')">FAQ's and Troubleshooting</button>
+</div>
+
+<div id="byo" class="tabcontent">
+	<h2 align="center"><font color="#8bbd04"> DSPico_B.Y.O </font></h2>
+	<h3 align="center"><font color="red"> Recommended for advanced users</font></h3>
+	<hr>
+	<p> DSpico_B.Y.O (Build your Own) and is a legal, publicly shareable, DSpico firmware that you can distribute and flash on your DSPico. All you need to run the dspico with this firmware is at least default.nds by following the build instructions on the LNH github.</p>
+<h4> DSpico_B.Y.O: <a href="https://www.mediafire.com/file/w8k1l89vvtv39l3/DSpico_B.Y.O.uf2/file" target="_blank" rel="noopener noreferrer">Download</a></h4>
+	<p> To use DSpico_B.Y.O.uf2, please follow these instuctions and do not skip a step when flashing:
+		<ol>
+			<li>Download <a href="https://www.mediafire.com/file/bag7pobolyopq3t/flash_nuke.uf2/file" target="_blank" rel="noopener noreferrer">this</a> flash nuke.uf2</li>
+			<li>Plug usb in to DSpico <b><i>without</i></b> sd card inserted.</li>
+			<li>Drag and drop flash_nuke.uf2 onto the `RPI-RP2` drive that appears</li>
+			<li>Disconnect usb cable from DSpico</li>
+			<li>Connect MicroSD Card to Computer</li>
+			<li>Make sure you have the `<a href="https://www.mediafire.com/file/y6bpfrcpczexfa3/default.nds/file" target="_blank" rel="noopener noreferrer">default.nds</a>` rom and any of the optional roms are on the root of the mSD Card.</li>
+			<li>Disconnect MicroSD Card from computer and plug it into your DSpico</li>
+			<li>Plug usb into DSPico</li>
+			<li>Drag and drop DSpico_B.Y.O.uf2 onto the `RPI-RP2` Drive</li>
+			<li>Wait while the DSpico led flashes.</li>
+			<li>When the led is solid* blue** disconnect the DSpico from the USB and enjoy.</li><br><br>
+			<ul>
+				<li>* If your DSpico led flashes but doesn't have a solid led color after flashing:<br> Disconnect, make sure you have the default.nds on the root of your microSD card and start again from step 2.</li>
+				<li>** Led color may be different between DSpico suppliers.</li>
+			</ul>
+		</ol>
+	</p>
+<br>
+
+You may use any combinations of the roms in this chart and the table below, shows you their original names and notes on what is needed to make them work:<br>
+<img src="assets/img/romchart.png"><br>
+<br>
+<button onclick="toggleTable()">Toggle Rom Table</button><br>
+	<table id="tauto" hidden>
+		<tr>
+			<th> Rom Name </th>
+			<th> Original Rom Name </th>
+			<th> Notes </th>
+		</tr>
+		<tr>
+			<td><b><font color="red">REQUIRED</font></b></td>
+		</tr>
+		<tr>
+			<td>default.nds</td>
+			<td>BOOTLOADER.NDS</td>
+			<td>Renamed and Encrypted with DSRomEncryptor<br> per the Bootloader Compiling Instuctions from LNH-Team</td>
+		</tr>
+		<tr>
+			<td><b><font color="orange">OPTIONAL</font></b></td>
+		</tr>
+		<tr>
+			<td>dsimode.nds</td>
+			<td>WRFU Tester v0.60.srl</td>
+			<td>Rename Rom.<br> <b>SHA-1:</b> <code><i>2d65fb7a0c62a4f08954b98c95f42b804fccfd26</i></code></td>
+		</tr>
+		<tr>
+			<td>ntrboot.nds</td>
+			<td>Boot9strap_ntr.firm</td>
+			<td>Encrypted and ran through firm_to_nds.py</td>
+		</tr>
+		<tr>
+			<td>ntrbootdsi.nds</td>
+			<td>default.gcd</td>
+			<td>Renamed Rom</td>
+		</tr>
+	</table> <br>
+</div>
+
+<div id="Firmware" class="tabcontent">
+	<h2> Firmware </h2>
+	<h3> Firmware Changelog: </h3>
+	<button onclick="toggleIframe()">Show/Hide</button>
+	<div id="iframeContainer" hidden>
+	<iframe src="assets/docs/fw changelog.txt" width="500" height="300"></iframe></div>
+<br>
+<br>
+	<h3> Firmware Files: </h3>
+
+    <table>
+    	<tr>
+    		<th> Firmware </th>
+    		<th> Build Ver</th>
+    		<th> Comments </th>
+    	</tr>
+    	<tr>
+    		<td><a href="/assets/docs/dspicofw_guide.pdf" target="_blank" rel="noopener noreferrer">Firmware Guide</a></td>
+    		<td> N/A</td>
+    		<td>Use this guide to choose the recommended firmware for your situation.</td>
+    	</tr>
+    	<tr>
+    		<td><a href="https://www.mediafire.com/file/w8k1l89vvtv39l3/DSpico_B.Y.O.uf2/file" target="_blank" rel="noopener noreferrer">DSpico_B.Y.O Edition</a></td>
+    		<td> B.Y.O Edition v1.0.0</td>
+    		<td>Please follow the instuctions on the DSpico_B.Y.O tab to use this firmware :)</td>
+    	</tr>
+    	<tr>
+    		<td><a href="https://www.mediafire.com/file/5cgpdohw820291e/DSpico_-_Hybrid_-_1.3.1.uf2/file" target="_blank" rel="noopener noreferrer">Hybrid Firmware</a></td>
+    		<td>Ver <code>1.3.1</code></td>
+    		<td>Commit Tags;<br><b> BL:</b><i><code>`29671d0`</code></i><b> FW:</b><i><code>`177dd8d`</code></i><br> <b>SHA1:</b> <code><i>9a5d090da58e7320c58d0ce73a6c800206203bd3</i></code><br>Repostirory can be found <a href="https://github.com/Ansem-Xae/dspico-firmware-antr" target="_blank" rel="noopener noreferrer">here</a></td>
+    	</tr>
+    	<tr>
+    		<td><a href="https://www.mediafire.com/file/2jvttvoxkmwghru/DSpico_-_Wrfuxxed_-_1.3.1.uf2/file" target="_blank" rel="noopener noreferrer">Wrfuxxed Firmware</a></td>
+  			<td>Ver <code>1.3.1</code></td>
+    		<td>Commit Tags;<br><b> BL:</b><i><code>`29671d0`</code></i><b> FW:</b><i><code>`177dd8d`</code></i><br> <b>SHA1:</b> <code><i>3239c130d103e7a6efe87805e912258597b03265</i></code><br>Repostirory can be found <a href="https://github.com/Ansem-Xae/dspico-firmware-antr" target="_blank" rel="noopener noreferrer">here</a></td>
+    	</tr>
+    	<tr>
+    		<td><a href="https://www.mediafire.com/folder/mfuveka3y4j2k/Old+Builds" target="_blank" rel="noopener noreferrer"> Previous Builds</a></td>
+    		<td>N/A</td>
+    		<td>Now added - Meta information is still available at archive.org</td>
+    	</tr>
+    </table><br>
+</div>
+
+<div id="SD" class="tabcontent">
+	<h3> SD Card Files</h3>
+<p>I have built the latest version of the sdcard files, this includes the DSPico Loader and the DSPico Launcher; This latest release has officially merged the cheats functionality into the main files. As such the previous cheats build and FW Files build have now been archived and I now only have the one release again. To use cheats please follow the official documentation <a href="https://github.com/LNH-team/pico-launcher/blob/develop/docs/Cheats.md" target="_blank" rel="noopener noreferrer">here. </a><br>Release 1.4.0 adds In Game Reset and Soft Rest to menu functionality. To use these features please check the chagelog below:</p>
+	<h3> SD Files Changelog: </h3>
+		<button onclick="toggleIframe2()">Show/Hide</button>
+		<div id="iframeContainer2">	
+		<iframe id="sd" src="assets/docs/sd changelog.txt" width="500" height="300"></iframe></div>
+<br>
+<br>
+<table>
+		<tr>
+			<th> SD Card Files </th>
+			<th> Link </th>
+			<th> Comments </th>
+		</tr>
+		<tr>
+			<td> Main Branch SD Files </td>
+			<td> <a href="https://www.mediafire.com/folder/0qtw3evkma1t3/DSPico+Sd+Card+Files" target="_blank" rel="noopener noreferrer">SD Card Files</a></td>
+			<td> Recommended. Build Ver: <code>1.4.1</code></td>
+		</tr>
+		<tr>
+			<td> Old Builds </td>
+			<td> <a href="https://www.mediafire.com/folder/20jqew3eul4mu/Old_Builds" target="_blank" rel="noopener noreferrer">SD Archive</a></td>
+			<td>Contains old archived versions. Old cheats ver commit info<br>
+			Commit Tags;<br><b> Loader:</b><i>`bac98b4`</i><br> <b> Launcher:</b> <i>`b7d7f9f`</i>. </td>
+		</tr>
+		<tr>
+			<td> DSi Emunand Files </td>
+			<td> <a href="https://www.mediafire.com/file/cistjybwx5mmw9d/DSI_Emu_Files.7z/file" target="_blank" rel="noopener noreferrer">DSi Nand</a></td>
+			<td> Extracted DSi Nand files for the DSPico DSi Emunand. <br> Included in main build by default.</td>
+		</tr>
+	</table>
+</div>
+
+<div id="ntr" class="tabcontent">
+  	<h3 align="center"> NTR Boot Guide for Recovery and Modding of 3ds family consoles.</h3>
+  	<h5 align="center"><font color="orange">This guide was written for 3ds, thus you will need to follow the DSi ntrguide <a href="https://wiki.ds-homebrew.com/ds-index/ntrboot?tab=dsi#running-ntrboot "target="_blank" rel="noopener noreferrer">instead</a></font></h5>
+  	<hr>
+  <p>
+  	<ol>
+		<li>Download my 3ds <a href="https://www.mediafire.com/file/yfo17486khtzhic/3DS_NTR_Recovery_Pack.7z/file" target="_blank" rel="noopener noreferrer">Recovery Pack</a></li>
+		<li>Extract the contents to the root of your 3ds <b>Console SD card</b>.<br>
+			<b><i><font color="red">This is not your DSPico Micro SD Card</font></i></b></li>
+			<ul>
+				<li>It is <i><b>vital</b></i> your console SD card is in fat32 format</li>
+			</ul>
+		<li>Insert the sd card back into the console</li>
+		<li>Insert your DSPico into your 3ds console.</li>
+		<li>Power on your 3ds. It should automatically load to GodMode9</li>
+			<ul>
+				<li>If it doesn't please try:<br>
+					<ul>
+						<li>Placing the magnet on your console to trigger the sleep sensor and holding<br><code><b>X</b>+<b>Start</b>+<b>Select</b>+<b>Power</b></code></li>
+					</ul>
+				<li>Failing that, please follow the <a href="https://3ds.hacks.guide/installing-boot9strap-(ntrboot).html#section-ii-ntrboot" target="_blank" rel="noopener noreferrer">3ds.hacks.guide</a> section for NTR boot.</li>
+			</ul>
+		<li>From here you can either:</li>
+			<ul>
+				<li>A) Install Boot9Strap + Luma3DS</li>
+					<ul>
+						<li>If you choose to mod your 3ds with B9S and luma navigate to <code>`<b>SD Card\Payloads\</b>`</code> and launch <code>'<b>SafeB9SInstaller.firm</b>`</code></li>
+		<li>Then follow the rest of this section of <a href="https://3ds.hacks.guide/installing-boot9strap-(ntrboot).html#section-iii-installing-boot9strap" target="_blank" rel="noopener noreferrer">3ds.hacks.guide</a></li>
+					</ul>
+				<li>B) Restore your previous nand dump.</li>
+					<ul>
+						<li>For restoring a previous nand dump using gm9 follow this <a href="https://3ds.hacks.guide/godmode9-usage.html#restoring-a-nand-backup" target="_blank" rel="noopener noreferrer">guide</a></li>
+					</ul>
+			</ul>
+		</ol>
+  </p>
+</div>
+
+<div id="FAQ" class="tabcontent">
+  	<h3> FAQ's and Troubleshooting </h3>
+  	<p> So you're having trouble with your DSPcio, here are some quick troubleshooting steps you can try to fix the issues you are having</p><br>
+<table>
+		<tr>
+			<th>Issue</th>
+			<th>Solution</th>
+		</tr>
+		<tr>
+			<td> I'm getting a red or blue screen</td>
+			<td> Make sure you have PicoLoader7.bin and PicoLoader9.bin in the `_pico` folder on your MicroSD Card</td>
+		</tr>
+		<tr>
+			<td> I'm getting a white screen when I try to load a rom</td>
+			<td><ol><li> Make sure you have the <i>biosnds7.rom</i> in your _pico folder</li><li> Make sure you have a reputable sd card formatted in fat32 with the proper allocation size</li>
+			<li> If you are using a Mac follow the instructions linked below</li>
+		</ol></td>
+		</tr>
+		<tr>
+			<td> I have a DS Lite and im stuck on a white screen when loading</td>
+			<td> Disable Flashme by holding select or remove it</td>
+		</tr>
+		<tr>
+			<td> I have a DSi or 3ds and it's not showing on the menu</td>
+			<td> Make sure you have the WRFUXXED firmware if your console is unmodified</td>
+		</tr>
+		<tr>
+			<td> I use a mac and my dspico isn't loading properly</td>
+			<td> The dreaded mac files strike again do the following:<br>
+			1) Enter this command in your terminal: `<i><code>dot_clean -mv /Volumes/YOUR_SD_CARD_NAME</code></i>`.<br>
+			2) Follow this <a href="https://piotrkrzyzek.com/how-to-delete-all-hidden-files-from-mac-os-removal-media-sd-cards-usb-keys-etc/" target="_blank" rel="noopener noreferrer">guide</a>.</td>
+		</tr>
+		<tr>
+			<td> I want to change the DSPico cart logo/title on my ds</td>
+			<td> If you are using the WRFUXXED firmware, this is not possible as doing so would change the signature of the rom required for the exploit to work.<br><br> If you are using the hybrid firmware it should be possible by editing the pico-launcher respostiory makefile</td>
+		</tr>
+		<tr>
+			<td> I ordered my dspico from Phenommod or aliexpress and it won't read in my 3ds</td>
+			<td> This is caused by the shell being a fraction of a millimeter too small (.4mm).<br>Either order a replacement shell from phenommod if you ordered from there or apply a thin piece of tape to the both sides of the shell.<br>This does not affect shell with the pin rails as it bends the pins into place and this is not ideal.</td>
+		</tr>
+		<tr>
+			<td id=emulators-pico> How do I emulate other consoles such as GBA with the DSPico?</td>
+			<td><a href="https://www.reddit.com/user/Arnas_Z/" target="_blank" rel="noopener noreferrer">u/Arnas_Z</a> has written a guide on how to set the DSPico up to emulate other consoles, you can find it <a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">here</a>. </td>
+		</tr>
+	</table>
+</div>
+
+<div id="ir" class="tabcontent">
+	<h1> COMING SOON </h1>
+<!-- UNCOMMENT WHEN READY --
+	<h2 align="center"><font color="#8bbd04"> DSPico_IR </font></h2>
+	<h3 align="center"><font color="#8bbd04"> A Upgraded DSPico from PhenomMod </font></h3>
+	<hr>
+	<p> DSpico_IR is a modified and updated version of the DSPico from PhenomMod, it is built with the Raspberry Pi Pico2 (rp2350) and has an inbuit IR Blaster to work with the Pokemon Games and Pokewalker.<br><br> This upgraded DSPico is preprogrammed with a modified version of the DSPico_B.Y.O firmware. To finish setting it up you will require to follow to guide below exactly otherwise it will not work.<br><cite>The mininum requirement to finish building the firmware is the dspico_IR firmware and the default.nds romfile.</cite></p>
+
+<h4> DSpico IR Firmware: <a href="https://www.mediafire.com/file/w8k1l89vvtv39l3/DSpico_B.Y.O.uf2/file" target="_blank" rel="noopener noreferrer">UPDATE ME</a></h4>
+	<p> To use DSPico IR, please follow these instuctions and <i><strong><font color="red">do not</font></strong></i> skip a step.
+		<ol>
+			<li>Download the DSPico_IR firmware from above</li>
+			<li>Connect MicroSD Card to Computer</li>
+			<li>Make sure you have the <cite><a href="https://www.mediafire.com/file/y6bpfrcpczexfa3/default.nds/file" target="_blank" rel="noopener noreferrer">default.nds</a></cite> rom and any of the optional roms on the root folder of your microSD Card.</li>
+			<li>Disconnect MicroSD Card from computer and plug it into your DSpico</li>
+			<li>Plug usb into DSPico</li>
+			<li>Drag and drop DSpico_IR.uf2 onto the `RPI-RP2` Drive</li>
+			<li>Wait while the DSpico led flashes.</li>
+			<li>When the led is solid blue disconnect the DSpico from the USB and enjoy.</li>
+		</ol>
+		<ul>
+				<li><small>If your DSpico led flashes but doesn't have a solid led color after flashing:<br> Disconnect it and make sure you have the default.nds on the root of your microSD card then start again.</li></small>
+				
+		</ul>
+	</p>
+<br>
+
+You may use any combinations of the roms in this table below. It shows you their original names and notes on what is needed to make them work:
+<br><br>
+	<table id="tauto">
+		<tr>
+			<th> Rom Name </th>
+			<th> Original Rom Name </th>
+			<th> Notes </th>
+		</tr>
+		<tr>
+			<td><b><font color="red">REQUIRED</font></b></td>
+		</tr>
+		<tr>
+			<td>default.nds</td>
+			<td>BOOTLOADER.NDS</td>
+			<td>Renamed and Encrypted with DSRomEncryptor<br> per the Bootloader Compiling Instuctions from LNH-Team</td>
+		</tr>
+		<tr>
+			<td><b><font color="orange">OPTIONAL</font></b></td>
+		</tr>
+		<tr>
+			<td>dsimode.nds</td>
+			<td>WRFU Tester v0.60.srl</td>
+			<td>Rename Rom.<br> <b>SHA-1:</b> <code><i>2d65fb7a0c62a4f08954b98c95f42b804fccfd26</i></code></td>
+		</tr>
+		<tr>
+			<td>ntrboot.nds</td>
+			<td>Boot9strap_ntr.firm</td>
+			<td>Encrypted and ran through firm_to_nds.py</td>
+		</tr>
+		<tr>
+			<td>ntrbootdsi.nds</td>
+			<td>default.gcd</td>
+			<td>Renamed Rom</td>
+		</tr>
+	</table> <br>
+</div>
+-->
+
+<br>
+<h2> Resources/References/Credits</h2>
+<hr>
+<a href="https://github.com/LNH-team" target="_blank" rel="noopener noreferrer"><img src="assets/img/lnhico.jpeg"></a> - LNH-Team<br>
+<a href="https://discord.com/invite/phenommod" target="_blank" rel="noopener noreferrer"><img src="assets/img/pmico.png"></a> - PhenomMod<br>
+<a href="https://www.reddit.com/r/flashcarts/" target="_blank" rel="noopener noreferrer"><img src="assets/img/reddit.png"></a> - Reddit<br>
+</main>
+<br>
+<br>
+</div>
+<footer>
+	 <small>
+	 	<p>Website last updated Mar-2026. <br>
+	 	&copy; 2026 <a href="https://www.mediafire.com/file/yi5s927xasy1zws/Roms.7z/file" target="_blank" rel="noopener noreferrer">Ansem - Seeker of Darkness</a></p>
+	 </small>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+plug usb in w/o sd card
+flash nuke
+disconnect usb
+plug sd card in
+plug usb in
+drag fw
+wait
+blinks
+blue solid
+disconnect
