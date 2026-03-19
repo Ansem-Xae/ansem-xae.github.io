@@ -8,8 +8,23 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
 }
-
+body {
+	    background-color: #333;
+}
+  .vl {
+    border-left: 6px solid grey; /* Defines the line: width, style, color */
+    height: 500px;              /* Defines the length of the line */
+  }
 main {
     margin-left: 200px; /* Push the main content to the right of the sidebar */
     padding: 1px 16px;
+}
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: auto;  
+}
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
 }
