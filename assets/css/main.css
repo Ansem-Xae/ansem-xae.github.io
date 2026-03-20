@@ -19,7 +19,7 @@ body {
   /* Apply the variables */
   color: var(--text-color);
   background-color: var(--background-color);
-
+  font-family: 'Open-Dyslexic', sans-serif;
 }
   .vl {
     border-left: 3px solid grey; /* Defines the line: width, style, color */
