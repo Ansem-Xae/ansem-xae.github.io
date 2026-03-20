@@ -1,30 +1,62 @@
+/* Light Theme (Default) */
+:root {
+  --bg-color: #ffffff; /* White background */
+  --text-color: #000000; /* Black text */
+  --link-color: #3498db; /* Blue link color */
+  --theme-border-color: #555; /* Default border color */
+}
+/* Dark Theme Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #e0e0e0; /* Light text */
+    --link-color: #2980b9; /* Slightly darker blue link color */
+    --theme-border-color: #bbb;
+  }
+}
+
+body {
+  /* Apply the variables */
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+}
+  .vl {
+    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 50px;
+    padding-right: 75px;
+  }
 .sidebar {
     height: 100%; /* Full height */
-    width: 200px; /* Set a specific width */
+    width: auto; /* Set a specific width */
     position: fixed; /* Fix the position on the screen */
     top: 0;
     left: 0;
-    background-color: #333;
+    /*background-color: #333;*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+
 }
-body {
-	    background-color: #333;
-}
-  .vl {
-    border-left: 6px solid grey; /* Defines the line: width, style, color */
-    height: 500px;              /* Defines the length of the line */
-  }
+
 main {
-    margin-left: 200px; /* Push the main content to the right of the sidebar */
-    padding: 1px 16px;
+    margin-left: 150px; /* Push the main content to the right of the sidebar */
+    /* text-align: justify; */
+
 }
  table, th, td {
-  border: 1px solid black;
+  border: 1px solid var(--theme-border-color);
   border-collapse: collapse;
   table-layout: auto;  
+  padding: 8px; 
 }
 .table-responsive {
     width: 100%;
     overflow-x: auto;
 }
+/*
+#noborder, #noborder td, #noborder th {
+  border: none !important;
+  border-collapse: collapse;
+  padding: 0px;
+*/

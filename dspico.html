@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>Official Website of Ansem - Seeker of Darkness</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/style.scss">
@@ -19,13 +20,12 @@
 	<div class="vl">
     <h1>DSPico by LNH Team!</h1>
     <p>As of now I have stopped uploaded my DSPico files on archive.org and have started using my own site here and mediafire.
-    Find the links below to the different firmwares and the guide to chose the correct firmware for your use case, as well as the SD Card files. </p>
-
+    Find the links below to the different firmwares and the guide to chose the correct firmware for your use case, as well as the SD Card files. </p><br>
 <h2>Firmware Files</h2>
     <table>
     	<tr>
     		<th> Firmware </th>
-    		<th> Sha1 </th>
+    		<th> Comments </th>
     	</tr>
     	<tr>
     		<td><a href="/assets/documents/dspicofw_guide.pdf" target="_blank" rel="noopener noreferrer">Firmware Guide</a></td>
@@ -50,10 +50,10 @@
     		<td><a href="https://www.mediafire.com/folder/mfuveka3y4j2k/Old+Builds" target="_blank" rel="noopener noreferrer"> Previous Builds</a></td>
     		<td></td>
     	</tr>
-    </table>
+    </table><br>
 <h2> SD Card Files </h2>
 <p> I have two different builds of the SD Card files, this includes the DSPico Loader and the DSPico Launcher; the main branch and the cheats branch. The cheats branch will have the commit versions listed. <i> The cheats branch may be unstable, please report any bugs to the lnh team github </i></p>
-	<table>
+<table>
 		<tr>
 			<th> SD Card Files </th>
 			<th> Link </th>
@@ -66,8 +66,8 @@
 		</tr>
 		<tr>
 			<td> Cheats Branch </td>
-			<td> <a href="https://www.mediafire.com/file/o9na4qnjlovkd4x/SD_Files_-_Cheats_Branch7z/file" target="_blank" rel="noopener noreferrer">Cheats</a></td>
-			<td>Commit Version<b>Loader:</b><i>`bac98b4`</i> <b>Launcher:</b> <i>`b7d7f9f`</i>. <p>Does not include the extra files for dsiware and encrypted roms. Get the main branch first then replace those files with these ones</p></td>
+			<td> <a href="https://www.mediafire.com/file/o9na4qnjlovkd4x/SD_Files_-_Cheats_Branch7z/file" target="_blank" rel="noopener noreferrer">Cheats Build</a></td><blockquote>
+			<td>Commit Version<b> Loader:</b><i>`bac98b4`</i> <b> Launcher:</b> <i>`b7d7f9f`</i>. <p> <b><i>Does not</b> include the extra files for dsiware and encrypted roms. Get the main branch first then replace those files with these ones</i></p></td></blockquote>
 		</tr>
 		<tr>
 			<td> Old Builds </td>
@@ -75,8 +75,32 @@
 			<td></td>
 		</tr>
 	</table>
+	<br>
+	<h2> Troubleshooting </h2>
+	<p> So you're having trouble with your DSPcio, here are some quick troubleshooting steps you can try to fix the issues you are having</p><br>
+<table id="noborder">
+		<tr>
+			<th>Issue</th>
+			<th>Solution</th>
+		</tr>
+		<tr>
+			<td> I'm getting a red or blue screen</td>
+			<td> Make sure you have PicoLoader7.bin and PicoLoader9.bin in the `_pico` folder on your MicroSD Card</td>
+		</tr>
+		<tr>
+			<td> I'm getting a white screen when I try to load a rom</td>
+			<td><ol><li> Make sure you have the <i>biosnds7.rom</i> in your _pico folder</li><li> Make sure you have a reputable sd card formatted in fat32 with the proper allocation size</li></ol></td>
+		</tr>
+		<tr>
+			<td> I have a DSi or 3ds and it's not showing on the menu</td>
+			<td> Make sure you have the WRFUXXED firmware if your console is unmodified</td>
+		</tr>
+		<tr>
+			<td> I use a mac and my dspico isn't loading properly</td>
+			<td> The dreaded mac files strike again, follow <a href="https://piotrkrzyzek.com/how-to-delete-all-hidden-files-from-mac-os-removal-media-sd-cards-usb-keys-etc/" target="_blank" rel="noopener noreferrer"> guide</a></td>
+		</tr>
+	</table>
 </main>
 </div>
 </body>
 </html>
-
