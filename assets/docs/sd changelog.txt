@@ -1,0 +1,28 @@
+SD CHANGELOG
+
+Version 1.2.2-Hotfix
+- Added missing dsi file to sd files
+
+Version 1.2.2
+- Updated files to latest release
+
+Version 1.2.1
+- Test version release, with updated ntrboot and hybrid firmwares . Not Publicly Released
+
+Version 1.2.0
+- Updated firmware files to latest commit
+- Split release to have Firmware Seperate from SD Files
+
+Version 1.1.3
+U-pdated DSpico + NTRboot to latest version - Commit 47b6db2
+
+Version 1.1.2
+-Latest main firmware build - commit 0040d92
+-cleaned up a few files
+
+Version 1.1.1
+-Added dspico firmware with autontr boot detect
+
+Version 1.0
+-Intial Build
+
