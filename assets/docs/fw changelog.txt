@@ -1,5 +1,10 @@
 FIRMWARE CHANGELOG
 
+EXPERIMENTAL
+- Forked Firmware from LNH-Team and merged Edo9300's PR into my fork
+- This should consolidate the firmware into 2 files, either Hybrid or WRFUXXED
+- Firmware should work as normal until you boot into NTR Mode.
+
 Version 1.2.2
 - Updated firmwares to Latest Commit
 - First Release with both hybrid and wrfuxxed firmwares

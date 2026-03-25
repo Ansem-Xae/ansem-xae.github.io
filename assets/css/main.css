@@ -15,15 +15,7 @@
   }
 }
 
-/* Default styles for all screens (often desktop-first or mobile-first) */
-.container {
-  width: 80%;
-  margin: auto;
-}
-
-/* Styles for screens smaller than 600px */
-
-/*Default styles for all screens (often desktop-first or mobile-first) */
+ /*Default styles for all screens (often desktop-first or mobile-first) */
 .container {
   width: 80%;
   margin: auto;
