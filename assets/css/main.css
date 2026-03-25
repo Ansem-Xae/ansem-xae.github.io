@@ -41,15 +41,15 @@ body {
   .vl {
     border-left: 3px solid grey; /* Defines the line: width, style, color */
     height: auto;              /* Defines the length of the line */
-    padding-left: 25px;
-    padding-right: 75px;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-left: auto;
   }
   .vl2 {
     border-left: 3px solid grey; /* Defines the line: width, style, color */
     height: auto;              /* Defines the length of the line */
-    padding-left: 25px;
-    padding-right: 75px;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-left: auto;
   }
 
@@ -60,10 +60,10 @@ body {
     width: auto; /* Set a specific width */
     position: fixed; /* Fix the position on the screen */
     top: 0;
-    left: 25px;
+    left: 2%;
     /*background-color: #333;*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 1px;
+    padding-top: 1%;
 }
 .sidebar ul {
   list-style-type: none; /* Removes the default bullet points */
@@ -92,7 +92,7 @@ body {
 
 
 main {
-    margin-left: 150px; /* Push the main content to the right of the sidebar */
+    margin-left: 10%; /* Push the main content to the right of the sidebar */
     /* text-align: justify; */
 
 }
@@ -103,7 +103,7 @@ main {
   border: 1px solid var(--theme-border-color);
   border-collapse: collapse;
   table-layout: auto;  
-  padding: 8px; 
+  padding: 1%; 
 }
 .table-responsive {
     width: 100%;
