@@ -9,26 +9,36 @@
     <link rel="stylesheet" href="assets/css/main.css">
 <!--<link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">-->
 </head>
+
 <body>
 <nav class="sidebar">
     <br>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="dspico.html">DSPico Stuff</a></li>
+        <li><a href="dspico.html">DSPico</a></li>
         <li><a href="index.html#contact">Contact</a></li>
     </ul>
 </nav>
+    
     <main>
-	<div class="vl">
+	<div class="vl2">
     <h1 div align="center"><img src="assets/img/pico.png"> DSPico by LNH Team! <img src="assets/img/pico.png"> </h1>
     <hr>
     <p>As of now I have stopped uploaded my DSPico files on archive.org and have started using my own site here and mediafire.<br>
-    Find the links below to the different firmwares and the guide to chose the correct firmware for your use case, as well as the SD Card files. </p><br>
-<h2>Firmware:</h2>
+    Find the links below to the different firmwares and the guide to chose the correct firmware for your use case, as well as the SD Card files.<br><br>I've included some handy links below:</p>
+    <nav class="navbar2">
+    <ul class="nav-links">
+        <li><a href="https://www.lnh-team.org/" target="_blank" rel="noopener noreferrer">LNH Team <img src="assets/img/lnhico.jpeg"></a></li>
+        <li><a href="https://scaletta.github.io/PicoCover/" target="_blank" rel="noopener noreferrer">Pico Cover <img src="assets/img/pico2.png"> </a></li>
+        <li><a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">Emulators Setup <img src="assets/img/sanrax.png"></a></li>
+        <li><a href="dspico.html#faq">DSPico FAQs<img src="assets/img/qm.png"></a></li>
+    </ul>
+</nav>
+<h2 id=fw>Firmware:</h2>
 	<h3> Firmware Changelog: </h3>
 	<iframe src="assets/docs/fw changelog.txt" width="500" height="300"></iframe>
 <br>
-<br>
+<br>	
 	<h3> Firmware Files: </h3>
     <table>
     	<tr>
@@ -66,9 +76,9 @@
     		<td>Now added - Meta information is still available at archive.org</td>
     	</tr>
     </table><br>
-<h2> SD Card Files:</h2>
+<h2 id=sdf> SD Card Files:</h2>
 <p> I have two different builds of the SD Card files, this includes the DSPico Loader and the DSPico Launcher; the main branch and the cheats branch. The cheats branch will have the commit tags listed. <br>The cheats branch may be unstable, <i> please report any bugs to <a href="https://github.com/LNH-team" target="_blank" rel="noopener noreferrer">LNH-Team Github</a></i></p>
-	<h3> Firmware Changelog: </h3>
+	<h3> SD Files Changelog: </h3>
 	<iframe src="assets/docs/sd changelog.txt" width="500" height="300"></iframe>
 <br>
 <br>
@@ -95,7 +105,7 @@
 		</tr>
 	</table>
 	<br>
-	<h2> Troubleshooting:</h2>
+	<h2 id=faq> Troubleshooting/FAQ's:</h2>
 	<p> So you're having trouble with your DSPcio, here are some quick troubleshooting steps you can try to fix the issues you are having</p><br>
 <table id="noborder">
 		<tr>
@@ -131,6 +141,10 @@
 		<tr>
 			<td> I ordered my dspico from Phenommod or aliexpress and it won't read in my 3ds</td>
 			<td> This is caused by the shell being a fraction of a millimeter too small (.4mm).<br>Either order a replacement shell from phenommod if you ordered from there or apply a thin piece of tape to the both sides of the shell.<br>This does not affect shell with the pin rails as it bends the pins into place and this is not ideal.</td>
+		</tr>
+		<tr>
+			<td id=emulators-pico> How do I emulate other consoles such as GBA with the DSPico?</td>
+			<td><a href="https://www.reddit.com/user/Arnas_Z/" target="_blank" rel="noopener noreferrer">u/Arnas_Z</a> has written a guide on how to set the DSPico up to emulate other consoles, you can find it <a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">here</a>. </td>
 		</tr>
 	</table>
 <br>
