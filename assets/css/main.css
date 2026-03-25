@@ -15,7 +15,19 @@
   }
 }
 
+/* Default styles for all screens (often desktop-first or mobile-first) */
+.container {
+  width: 80%;
+  margin: auto;
+}
 
+/* Styles for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%; /* Full width on smaller screens */
+  }
+  /* You can also stack columns here by changing float properties to none or using flex-direction: column */
+}
 
 body {
   /* Apply the variables */
