@@ -33,22 +33,6 @@ body {
 
 
 
-  .vl {
-    border-left: 3px solid grey; /* Defines the line: width, style, color */
-    height: auto;              /* Defines the length of the line */
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: auto;
-  }
-  .vl2 {
-    border-left: 3px solid grey; /* Defines the line: width, style, color */
-    height: auto;              /* Defines the length of the line */
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-left: auto;
-  }
-
-
 
 .sidebar {
     height: 100%; /* Full height */
@@ -91,6 +75,25 @@ main {
     /* text-align: justify; */
 
 }
+
+
+
+  .vl {
+    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+        overflow-x: hidden; /* Disable horizontal scroll */
+  }
+  .vl2 {
+    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+        overflow-x: hidden; /* Disable horizontal scroll */
+  }
 
 
 
