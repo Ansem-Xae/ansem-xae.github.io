@@ -1,0 +1,173 @@
+/* Light Theme (Default) */
+:root {
+  --bg-color: #ffffff; /* White background */
+  --text-color: #000000; /* Black text */
+  --link-color: #3498db; /* Blue link color */
+  --theme-border-color: #555; /* Default border color */
+}
+/* Dark Theme Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #e0e0e0; /* Light text */
+    --link-color: #2980b9; /* Slightly darker blue link color */
+    --theme-border-color: #bbb;
+  }
+}
+
+ /*Default styles for all screens (often desktop-first or mobile-first) */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Styles for screens smaller than 1020px */
+@media screen and (max-width: 1020px) { #container, #header, #content, #footer { float: none; width: auto; } #subtitle, #share, #slider, #sidebar{ display:none; } p{ font-size: 2em; } }
+
+body {
+  /* Apply the variables */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+}
+
+
+
+
+.sidebar {
+    height: 100%; /* Full height */
+    width: auto; /* Set a specific width */
+    position: fixed; /* Fix the position on the screen */
+    top: 0;
+    left: 2%;
+    /*background-color: #333;*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 1%;
+}
+.sidebar ul {
+  list-style-type: none; /* Removes the default bullet points */
+  margin: 0;
+  padding: 0;
+  width: auto; /* Sets a fixed width for the bar */
+  background-color: #333;
+}
+
+.sidebar li a {
+  display: block; /* Make the whole area clickable and styleable */
+  color: white; /* White text color */
+  text-align: center;
+  padding: 8px 16px; /* Adds space inside the links */
+  text-decoration: none; /* Removes the default underline */
+  border-bottom: 1px solid #ccc; /* Optional: adds separation lines */
+    font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+
+}
+/* Change the link and background color on hover */
+.sidebar li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
+main {
+    margin-left: 10%; /* Push the main content to the right of the sidebar */
+    /* text-align: justify; */
+
+}
+
+
+
+  .vl {
+    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+        overflow-x: hidden; /* Disable horizontal scroll */
+  }
+  .vl2 {
+    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    height: auto;              /* Defines the length of the line */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+        overflow-x: hidden; /* Disable horizontal scroll */
+  }
+
+
+
+ table, th, td {
+  border: 1px solid var(--theme-border-color);
+  border-collapse: collapse;
+  table-layout: auto;  
+  padding: 1%; 
+}
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+#tauto{
+  table-layout: auto;
+  width: 75%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+/*
+#noborder, #noborder td, #noborder th {
+  border: none !important;
+  border-collapse: collapse;
+  padding: 0px;
+*/
+
+
+
+blockquote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Or any specific width */
+    text-align: center; /* Optional: centers text inside too */
+}
+
+
+
+.navbar2 {
+    background-color: #333; /* Dark background for the bar */
+    overflow: hidden; /* Clear floats if using float method */
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%; 
+}
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+}
+.nav-links li a {
+    display: block; /* Make the whole area clickable and styleable */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 8px 8px; /* Adds space inside the links *//* Space around the text */
+    text-decoration: none; /* Remove underlines */
+    font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+}
+.nav-links li a:hover {
+    background-color: #d3025e; /* Change background on hover */
+    color: black;
+    cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #abbaba;
+  color: black;
+}
+
+#iframeContainer {
+    display: none;
+}
+#iframeContainer2 {
+    display: none;
+}
