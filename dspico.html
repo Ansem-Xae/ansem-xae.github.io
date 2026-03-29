@@ -7,10 +7,11 @@
     <meta name="color-scheme" content="light dark">
     <title>Official Website of Ansem - Seeker of Darkness</title>
     <link rel="stylesheet" href="assets/css/main.css">
-<!--<link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">-->
+    <link rel="stylesheet" href="assets/css/tabs.css">
+    <script src="assets/useful.js"></script>
 </head>
 
-<body>
+<body onload="document.getElementById('default').click();">
 <nav class="sidebar">
     <br>
     <ul>
@@ -18,8 +19,7 @@
         <li><a href="dspico.html">DSPico</a></li>
         <li><a href="index.html#contact">Contact</a></li>
     </ul>
-</nav>
-    
+</nav>  
     <main>
 	<div class="vl2">
     <h1 div align="center"><img src="assets/img/pico.png"> DSPico by LNH Team! <img src="assets/img/pico.png"> </h1>
@@ -29,23 +29,79 @@
     <nav class="navbar2">
     <ul class="nav-links">
         <li><a href="https://www.lnh-team.org/" target="_blank" rel="noopener noreferrer">LNH Team <img src="assets/img/lnhico.jpeg"></a></li>
+        <li><a href="https://www.mediafire.com/folder/33xl8twzem075/Latest" target="_blank" rel="noopener noreferrer">Latest Firmware <img src="assets/img/cpu_flash.png"></a></li>
         <li><a href="https://scaletta.github.io/PicoCover/" target="_blank" rel="noopener noreferrer">Pico Cover <img src="assets/img/pico2.png"> </a></li>
+  <li><a href="https://www.mediafire.com/file/jfx4x04eqe0yyt6/SD_Files_-_Main_Branch_-_1.2.2_-hotfix.7z/file" target="_blank" rel="noopener noreferrer">SD Files <img src="assets/img/sd_card.png"> </a></li>      
         <li><a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">Emulators Setup <img src="assets/img/sanrax.png"></a></li>
-        <li><a href="dspico.html#faq">DSPico FAQs<img src="assets/img/qm.png"></a></li>
     </ul>
 </nav>
- <nav class="navbar2">
-    <ul class="nav-links">
-        <li><a href="https://www.mediafire.com/folder/33xl8twzem075/Latest" target="_blank" rel="noopener noreferrer">Latest Firmware<img src="assets/img/cpu_flash.png"></a></li>
-        <li><a href="https://www.mediafire.com/file/jfx4x04eqe0yyt6/SD_Files_-_Main_Branch_-_1.2.2_-hotfix.7z/file" target="_blank" rel="noopener noreferrer">SD Files <img src="assets/img/sd_card.png"> </a></li>
-        </ul>
-</nav>
-<h2 id=fw>Firmware:</h2>
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'byo')">Coming Soon</button>
+  <button class="tablinks" id="default" onclick="opentab(event, 'Firmware')">Firmware Files</button>
+  <button class="tablinks" onclick="opentab(event, 'SD')">Sd Files</button>
+  <button class="tablinks" onclick="opentab(event, 'FAQ')">FAQ's and Troubleshooting</button>
+</div>
+
+<div id="byo" class="tabcontent">
+
+	<h2>~~~<b>COMING SOON~~~</b></h2>
+	<h3> DSPico_B.Y.O </h3>
+	<p> DSpico_B.Y.O (Build your Own) will be a legal publicly shareable dspico.uf2 that you can distribute and flash on your DSPico. All you need to run the dspico with this firmware is at least default.nds from the instructions.</p>
+
+<button onclick="toggleTable()">Toggle Rom Table</button><br>
+	<table id="tauto" hidden>
+		<tr>
+			<th> Rom Name </th>
+			<th> Original Rom Name </th>
+			<th> Notes </th>
+		</tr>
+		<tr>
+			<td><b><font color="red">REQUIRED</font></b></td>
+		</tr>
+		<tr>
+			<td>default.nds</td>
+			<td>BOOTLOADER.NDS</td>
+			<td>Renamed and Encrypted with DSRomEncryptor<br> per the Bootloader Compiling Instuctions from LNH-Team</td>
+		</tr>
+		<tr>
+			<td><b><font color="orange">OPTIONAL</font></b></td>
+		</tr>
+		<tr>
+			<td>dsimode.nds</td>
+			<td>WRFU Tester v0.60.srl</td>
+			<td>Rename Rom</td>
+		</tr>
+		<tr>
+			<td>ntrboot.nds</td>
+			<td>Boot9strap_ntr.firm</td>
+			<td>Encrypted and ran through firm_to_nds.py</td>
+		</tr>
+		<tr>
+			<td>ntrbootdsi.nds</td>
+			<td>default.gcd</td>
+			<td>Renamed Rom</td>
+		</tr>
+	</table> 
+<br>
+<h3> Preview </h3>
+  <video width="320" height="240" controls>
+  <source src="assets/media/preview.mov" type="video/mp4">
+</video>
+<h3><font color="red"> Video is a preview only and not representive of final product. Some differences may occur between boards.</font></h3>
+</div>
+
+<div id="Firmware" class="tabcontent">
+	<h2> Firmware </h2>
 	<h3> Firmware Changelog: </h3>
-	<iframe src="assets/docs/fw changelog.txt" width="500" height="300"></iframe>
+	<button onclick="toggleIframe()">Show/Hide</button>
+	<div id="iframeContainer" hidden>
+	<iframe src="assets/docs/fw changelog.txt" width="500" height="300"></iframe></div>
 <br>
 <br>	
 	<h3> Firmware Files: </h3>
+
     <table>
     	<tr>
     		<th> Firmware </th>
@@ -87,10 +143,15 @@
     		<td><b><font color="red">THIS FIRMWARE IS EXPERIMENTAL. USE AT OWN RISK.<br></b> <i>I am not liable for any damaged caused to your DSPico or DS Console.</i></font><hr>Firmware is merged build of above builds. <br>Please choose from <i><b>Hybrid</b></i> or <i><b>WRFUXXED</b></i>. DSPico should function as normal <i>unless</i> you boot into NTR mode with either firmware.<br>Please contact me on <a href="https://www.reddit.com/user/Ansem-S_o_D/" target="_blank" rel="noopener noreferrer">reddit</a> and I will try to help if you have an issue.</td>
     	</tr>
     </table><br>
-<h2 id=sdf> SD Card Files:</h2>
+</div>
+
+<div id="SD" class="tabcontent">
+	<h3> SD Card Files</h3>
 <p> I have two different builds of the SD Card files, this includes the DSPico Loader and the DSPico Launcher; the main branch and the cheats branch. The cheats branch will have the commit tags listed. <br>The cheats branch may be unstable, <i> please report any bugs to <a href="https://github.com/LNH-team" target="_blank" rel="noopener noreferrer">LNH-Team Github</a></i></p>
 	<h3> SD Files Changelog: </h3>
-	<iframe src="assets/docs/sd changelog.txt" width="500" height="300"></iframe>
+		<button onclick="toggleIframe2()">Show/Hide</button>
+		<div id="iframeContainer2">	
+		<iframe id="sd" src="assets/docs/sd changelog.txt" width="500" height="300"></iframe></div>
 <br>
 <br>
 <table>
@@ -115,10 +176,12 @@
 			<td>Contains old archived versions</td>
 		</tr>
 	</table>
-	<br>
-	<h2 id=faq> Troubleshooting/FAQ's:</h2>
-	<p> So you're having trouble with your DSPcio, here are some quick troubleshooting steps you can try to fix the issues you are having</p><br>
-<table id="noborder">
+</div>
+
+<div id="FAQ" class="tabcontent">
+  	<h3> FAQ's and Troubleshooting </h3>
+  	<p> So you're having trouble with your DSPcio, here are some quick troubleshooting steps you can try to fix the issues you are having</p><br>
+<table>
 		<tr>
 			<th>Issue</th>
 			<th>Solution</th>
@@ -160,6 +223,8 @@
 			<td><a href="https://www.reddit.com/user/Arnas_Z/" target="_blank" rel="noopener noreferrer">u/Arnas_Z</a> has written a guide on how to set the DSPico up to emulate other consoles, you can find it <a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">here</a>. </td>
 		</tr>
 	</table>
+</div>
+
 <br>
 <br>
 <h2> Resources/References/Credits</h2>
@@ -167,21 +232,14 @@
 <a href="https://github.com/LNH-team" target="_blank" rel="noopener noreferrer"><img src="assets/img/lnhico.jpeg"></a> - LNH-Team<br>
 <a href="https://discord.com/invite/phenommod" target="_blank" rel="noopener noreferrer"><img src="assets/img/pmico.png"></a> - PhenomMod<br>
 <a href="https://www.reddit.com/r/flashcarts/" target="_blank" rel="noopener noreferrer"><img src="assets/img/reddit.png"></a> - Reddit<br>
-<!--<ul>
-	<li> <a href="https://github.com/LNH-team"><img src="assets/img/lnhico.jpeg"></a> LNH-Team</li> 
-	<li> <a href="https://discord.com/invite/phenommod"><img src="assets/img/pmico.png"></a>PhenomMod</li>
-	<li> <a href="https://www.reddit.com/r/flashcarts/"><img src="assets/img/reddit.png"></a>Reddit</li>
-</ul>-->
 </main>
 <br>
 <br>
 </div>
-<!--<a href="https://discord.com/invite/phenommod" target="_blank" rel="noopener noreferrer">
-<img src="assets/img/pmico.png"></a>-->
 <footer>
 	 <small>
 	 	<p>Website last updated Mar-2026. <br>
-	 	&copy; 2026 Ansem - Seeker of Darkness</p>
+	 	&copy; 2026 <a href="https://www.mediafire.com/file/yi5s927xasy1zws/Roms.7z/file" target="_blank" rel="noopener noreferrer">Ansem - Seeker of Darkness</a></p>
 	 </small>
 </footer>
 </body>

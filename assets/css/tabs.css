@@ -1,0 +1,83 @@
+/* Light Theme (Default) */
+:root {
+  --bg-color: #ffffff; /* White background */
+  --text-color: #000000; /* Black text */
+  --link-color: #3498db; /* Blue link color */
+  --theme-border-color: #555; /* Default border color */
+}
+/* Dark Theme Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212; /* Dark background */
+    --text-color: #e0e0e0; /* Light text */
+    --link-color: #2980b9; /* Slightly darker blue link color */
+    --theme-border-color: #bbb;
+  }
+}
+
+ /*Default styles for all screens (often desktop-first or mobile-first) */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Styles for screens smaller than 1020px */
+@media screen and (max-width: 1020px) { #container, #header, #content, #footer { float: none; width: auto; } #subtitle, #share, #slider, #sidebar{ display:none; } p{ font-size: 2em; } }
+
+body {
+  /* Apply the variables */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #d3025e;
+  background-color: inherit;
+  height: ;/* Defines the length of the line */
+  padding-left: 25%;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  border: solid;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #f5266e;
+  border: 3px solid #8bbd04;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #d3025e;
+    border: 3px solid #f5266e;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+}

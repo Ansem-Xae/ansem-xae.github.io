@@ -107,6 +107,12 @@ main {
     width: 100%;
     overflow-x: auto;
 }
+#tauto{
+  table-layout: auto;
+  width: 75%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
 /*
 #noborder, #noborder td, #noborder th {
   border: none !important;
@@ -148,7 +154,7 @@ blockquote {
     font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
 }
 .nav-links li a:hover {
-    background-color: #ddd; /* Change background on hover */
+    background-color: #d3025e; /* Change background on hover */
     color: black;
     cursor: pointer;
 }
@@ -157,4 +163,11 @@ footer {
   padding: 5px;
   background-color: #abbaba;
   color: black;
+}
+
+#iframeContainer {
+    display: none;
+}
+#iframeContainer2 {
+    display: none;
 }
