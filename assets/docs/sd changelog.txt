@@ -1,5 +1,34 @@
 SD CHANGELOG
 
+Version 1.3.0 - Official Cheats Release
+- Updated to most recent version of PicoLoader and PicoLauncher
+
+	- Pico-Loader Ver 1.6.0 Official Changelog:
+			Added:
+    		-Support for the SuperChis slot 2 card - by @edo9300
+    		-Most of the remaining SDK 2-4 DMA patches - by @taxicat1
+    		-Support for cheats
+        	-The Pico Loader API was updated to v3 for this purpose.
+
+			Fixed:
+    		-Star Wars Jedi Alliance patch - by @taxicat1
+
+    - Pico Launcher Ver 1.2.0 Official Changelog:
+    		Added:
+    		-Support for cheats with Pico Loader API v3
+    		-Hide files/dirs with hidden attribute, or with a name starting with a period
+    		-New customization options for custom themes
+        	-Position of elements on the top screen
+        		-Text colors
+        		-Blend colors
+
+			Changed:
+    		-File name on the top screen now uses marquee when too long
+
+			Fixed:
+    		-Improve error handling for banners to better detect if a rom has a valid banner
+
+
 Version 1.2.2-Hotfix
 - Added missing dsi file to sd files
 
@@ -13,8 +42,8 @@ Version 1.2.0
 - Updated firmware files to latest commit
 - Split release to have Firmware Seperate from SD Files
 
-Version 1.1.3
-U-pdated DSpico + NTRboot to latest version - Commit 47b6db2
+- Version 1.1.3
+Updated DSpico + NTRboot to latest version - Commit 47b6db2
 
 Version 1.1.2
 -Latest main firmware build - commit 0040d92
