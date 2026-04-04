@@ -31,14 +31,14 @@
         <li><a href="https://www.lnh-team.org/" target="_blank" rel="noopener noreferrer">LNH Team <img src="assets/img/lnhico.jpeg"></a></li>
         <li><a href="https://www.mediafire.com/folder/33xl8twzem075/Latest" target="_blank" rel="noopener noreferrer">Latest Firmware <img src="assets/img/cpu_flash.png"></a></li>
         <li><a href="https://scaletta.github.io/PicoCover/" target="_blank" rel="noopener noreferrer">Pico Cover <img src="assets/img/pico2.png"> </a></li>
-  <li><a href="https://www.mediafire.com/file/jtw3tiq93s2fb9k/SD+Files+-+Ver+1.3.0.7z/file" target="_blank" rel="noopener noreferrer">SD Files <img src="assets/img/sd_card.png"> </a></li>      
+  <li><a href="https://www.mediafire.com/file/wytdvpz5qoqdbsi/SD_Files_-_v1.4.0.7z/file" target="_blank" rel="noopener noreferrer">SD Files <img src="assets/img/sd_card.png"> </a></li>      
         <li><a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">Emulators Setup <img src="assets/img/sanrax.png"></a></li>
     </ul>
 </nav>
 <br>
 
 <div class="tab">
-  <button class="tablinks" id="default" onclick="opentab(event, 'byo')">Coming Soon</button><!--
+  <button class="tablinks" id="default" onclick="opentab(event, 'byo')">DSpico BYO</button><!--
   <button class="tablinks" id="default" onclick="opentab(event, 'Firmware')">Firmware Files</button>-->
   <button class="tablinks" onclick="opentab(event, 'Firmware')">Firmware Files</button>
   <button class="tablinks" onclick="opentab(event, 'SD')">Sd Files</button>
@@ -47,10 +47,35 @@
 
 <div id="byo" class="tabcontent">
 
-	<h2>~~~<b>COMING SOON~~~</b></h2>
-	<h3> DSPico_B.Y.O </h3>
-	<p> DSpico_B.Y.O (Build your Own) will be a legal publicly shareable dspico.uf2 that you can distribute and flash on your DSPico. All you need to run the dspico with this firmware is at least default.nds from the instructions.</p>
+	<!--<h2>~~~<b>COMING SOON~~~</b></h2>-->
+	<h2 align="center"><font color="#8bbd04"> DSPico_B.Y.O </font></h2>
+	<hr>
+	<p> DSpico_B.Y.O (Build your Own) and is a legal, publicly shareable, DSpico firmware that you can distribute and flash on your DSPico. All you need to run the dspico with this firmware is at least default.nds by following the build instructions on the LNH github.</p>
+<h4> DSpico_B.Y.O: <a href="https://www.mediafire.com/file/w8k1l89vvtv39l3/DSpico_B.Y.O.uf2/file" target="_blank" rel="noopener noreferrer">Download</a></h4>
+	<p> To use DSpico_B.Y.O.uf2, please follow these instuctions and do not skip a step when flashing:
+		<ol>
+			<li>Download <a href="https://www.mediafire.com/file/bag7pobolyopq3t/flash_nuke.uf2/file" target="_blank" rel="noopener noreferrer">this</a> flash nuke.uf2</li>
+			<li>Plug usb in to DSpico <b><i>without</i></b> sd card inserted.</li>
+			<li>Drag and drop flash_nuke.uf2 onto the `RPI-RP2` drive that appears</li>
+			<li>Disconnect usb cable from DSpico</li>
+			<li>Connect MicroSD Card to Computer</li>
+			<li>Make sure you have the `<a href="https://www.mediafire.com/file/y6bpfrcpczexfa3/default.nds/file" target="_blank" rel="noopener noreferrer">default.nds</a>` rom and any of the optional roms are on the root of the mSD Card.</li>
+			<li>Disconnect MicroSD Card from computer and plug it into your DSpico</li>
+			<li>Plug usb into DSPico</li>
+			<li>Drag and drop DSpico_B.Y.O.uf2 onto the `RPI-RP2` Drive</li>
+			<li>Wait while the DSpico led flashes.</li>
+			<li>When the led is solid* blue** disconnect the DSpico from the USB and enjoy.</li><br><br>
+			<ul>
+				<li>* If your DSpico led flashes but doesn't have a solid led color after flashing:<br> Disconnect, make sure you have the default.nds on the root of your microSD card and start again from step 2.</li>
+				<li>** Led color may be different between DSpico suppliers.</li>
+			</ul>
+		</ol>
+	</p>
+<br>
 
+You may use any combinations of the roms in this chart and the table below, shows you their original names and notes on what is needed to make them work:<br>
+<img src="assets/img/romchart.png"><br>
+<br>
 <button onclick="toggleTable()">Toggle Rom Table</button><br>
 	<table id="tauto" hidden>
 		<tr>
@@ -72,7 +97,7 @@
 		<tr>
 			<td>dsimode.nds</td>
 			<td>WRFU Tester v0.60.srl</td>
-			<td>Rename Rom</td>
+			<td>Rename Rom.<br> <b>SHA-1:</b> <i>2d65fb7a0c62a4f08954b98c95f42b804fccfd26</i></td>
 		</tr>
 		<tr>
 			<td>ntrboot.nds</td>
@@ -84,13 +109,13 @@
 			<td>default.gcd</td>
 			<td>Renamed Rom</td>
 		</tr>
-	</table> 
-<br>
+	</table> <br>
+<!--
 <h3> Preview </h3>
   <video width="320" height="240" controls>
   <source src="assets/media/preview.mov" type="video/mp4">
 </video>
-<h3><font color="red"> Video is a preview only and not representive of final product. Some differences may occur between boards.</font></h3>
+<h3><font color="red"> Video is a preview only and not representive of final product. Some differences may occur between boards.</font></h3>-->
 </div>
 
 <div id="Firmware" class="tabcontent">
@@ -100,7 +125,7 @@
 	<div id="iframeContainer" hidden>
 	<iframe src="assets/docs/fw changelog.txt" width="500" height="300"></iframe></div>
 <br>
-<br>	
+<br>
 	<h3> Firmware Files: </h3>
 
     <table>
@@ -113,6 +138,11 @@
     		<td><a href="/assets/docs/dspicofw_guide.pdf" target="_blank" rel="noopener noreferrer">Firmware Guide</a></td>
     		<td> N/A</td>
     		<td>Use this guide to choose the recommended firmware for your situation.</td>
+    	</tr>
+    	<tr>
+    		<td><a href="https://www.mediafire.com/file/w8k1l89vvtv39l3/DSpico_B.Y.O.uf2/file" target="_blank" rel="noopener noreferrer">DSpico_B.Y.O Edition</a></td>
+    		<td> B.Y.O Edition v1.0.0</td>
+    		<td>Please follow the instuctions on the DSpico_B.Y.O tab to use this firmware :)</td>
     	</tr>
     	<tr>
     		<td><a href="https://www.mediafire.com/file/701eevxqflzw3al/DSpico_-_HYBRID_-_NoAutoNTR.uf2/file" target="_blank">Hybrid - NoAutoNTR</a></td>
@@ -148,7 +178,7 @@
 
 <div id="SD" class="tabcontent">
 	<h3> SD Card Files</h3>
-<p>I have built the latest version of the sdcard files, this includes the DSPico Loader and the DSPico Launcher; This latest release has officially merged the cheats functionality into the main files. As such the previous cheats build and FW Files build have now been archived and I now only have the one release again. To use cheats please follow the official documentation <a href="https://github.com/LNH-team/pico-launcher/blob/develop/docs/Cheats.md" target="_blank" rel="noopener noreferrer"> here </a></p>
+<p>I have built the latest version of the sdcard files, this includes the DSPico Loader and the DSPico Launcher; This latest release has officially merged the cheats functionality into the main files. As such the previous cheats build and FW Files build have now been archived and I now only have the one release again. To use cheats please follow the official documentation <a href="https://github.com/LNH-team/pico-launcher/blob/develop/docs/Cheats.md" target="_blank" rel="noopener noreferrer">here. </a><br>Release 1.4.0 adds In Game Reset and Soft Rest to menu functionality. To use these features please check the chagelog below:</p>
 	<h3> SD Files Changelog: </h3>
 		<button onclick="toggleIframe2()">Show/Hide</button>
 		<div id="iframeContainer2">	
@@ -163,8 +193,8 @@
 		</tr>
 		<tr>
 			<td> Main Branch SD Files </td>
-			<td> <a href="https://www.mediafire.com/file/jtw3tiq93s2fb9k/SD+Files+-+Ver+1.3.0.7z/file" target="_blank" rel="noopener noreferrer">SD Card Files</a></td>
-			<td> Recommended. Build Ver 1.3.0</td>
+			<td> <a href="https://www.mediafire.com/file/wytdvpz5qoqdbsi/SD_Files_-_v1.4.0.7z/file" target="_blank" rel="noopener noreferrer">SD Card Files</a></td>
+			<td> Recommended. Build Ver 1.4.0</td>
 		</tr>
 		<tr>
 			<td> Old Builds </td>
@@ -227,7 +257,6 @@
 	</table>
 </div>
 
-<br>
 <br>
 <h2> Resources/References/Credits</h2>
 <hr>

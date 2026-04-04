@@ -1,5 +1,14 @@
 SD CHANGELOG
 
+Version 1.4.0 - He is Risen (Easter Edition)
+- Updated PicoLoad and PicoLauncher to support Soft Resetting and In Game Reset for those that support it.
+	- To use In Game Reset press L+R+Start+Select
+	- To Soft Reset press L+R+Start+Select+Dpad Down within 1 sec of the other buttons
+-Added latest usrcheat.dat
+
+-- Pull Requests will be made shortly to the official github pages.
+-- If anyone wants to built this themselves from my git, they require to patch _picoboot.nds with DSpico.DLDI
+
 Version 1.3.0 - Official Cheats Release
 - Updated to most recent version of PicoLoader and PicoLauncher
 

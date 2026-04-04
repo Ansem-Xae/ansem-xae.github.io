@@ -1,5 +1,9 @@
 FIRMWARE CHANGELOG
 
+DSpico B.Y.O Edition
+- Legally Distribuatble firmware
+- only requires you to have default.nds on sd card then flash firmware to dspico, see dspico byo for full instrutions.
+
 EXPERIMENTAL
 - Forked Firmware from LNH-Team and merged Edo9300's PR into my fork
 - This should consolidate the firmware into 2 files, either Hybrid or WRFUXXED

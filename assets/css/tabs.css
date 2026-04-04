@@ -34,7 +34,7 @@ body {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #d3025e;
+  border: 2px solid #d3025e;
   background-color: inherit;
   height: ;/* Defines the length of the line */
   padding-left: 25%;
@@ -71,7 +71,7 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 2px solid #8bbd04;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 
