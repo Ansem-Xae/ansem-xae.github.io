@@ -37,7 +37,7 @@ body {
   border: 2px solid #d3025e;
   background-color: inherit;
   height: ;/* Defines the length of the line */
-  padding-left: 25%;
+  padding-left: 15%;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
@@ -74,7 +74,6 @@ body {
   border: 2px solid #8bbd04;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
-
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {

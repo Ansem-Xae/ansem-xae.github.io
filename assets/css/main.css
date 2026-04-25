@@ -38,8 +38,8 @@ body {
     height: 100%; /* Full height */
     width: auto; /* Set a specific width */
     position: fixed; /* Fix the position on the screen */
-    top: 0;
-    left: 2%;
+    top: .5%;
+    left: .5%;
     /*background-color: #333;*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 1%;
