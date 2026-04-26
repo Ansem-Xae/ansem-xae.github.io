@@ -4,6 +4,9 @@ DSpico B.Y.O Edition
 - Legally Distribuatble firmware
 - only requires you to have default.nds on sd card then flash firmware to dspico, see dspico byo for full instrutions.
 
+Version 1.3.1
+- Updated ntrboot rom to latest commit. Should now work with boot9strap 1.4 release.
+
 Version 1.3.0
 - Main release of experimental release
 - Please see the readme from the experimental section below
