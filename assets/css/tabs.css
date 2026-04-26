@@ -37,7 +37,7 @@ body {
   border: 2px solid #d3025e;
   background-color: inherit;
   height: ;/* Defines the length of the line */
-  padding-left: 15%;
+  padding-left: 25%;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
