@@ -34,22 +34,22 @@
   		<li><a href="https://www.mediafire.com/file/ajo0cd19b6ogiqh/SD_Files_-_v1.4.1.7z/file" target="_blank" rel="noopener noreferrer">SD Files <img src="assets/img/sd_card.png"> </a></li>      
         <li><a href="https://sanrax.github.io/flashcart-guides/tutorials/emulators-pico/" target="_blank" rel="noopener noreferrer">Emulators Setup <img src="assets/img/sanrax.png"></a></li>
         <li><a href="https://themes.flashcarts.net/pico/" target="_blank" rel="noopener noreferrer">DSpico Themes <img src="assets/img/r4.png"></a></li>
-        <li><a href="https://scaletta.github.io/PicoCover/" target="_blank" rel="noopener noreferrer">Pico Cover <img src="assets/img/pico2.png"> </a></li>
+        <li><a href="https://scaletta.github.io/PicoCover/" target="_blank" rel="noopener noreferrer">Pico Cover <img src="assets/img/pico2.png"></a></li>
     </ul>
 </nav>
 <br>
 
 <div class="tab">
-  <!--<button class="tablinks" id="default" onclick="opentab(event, 'byo')">DSpico BYO</button>-->
   <button class="tablinks" onclick="opentab(event, 'byo')">DSpico BYO</button>
-  <button class="tablinks" id="default" onclick="opentab(event, 'Firmware')">Firmware Files</button>
-  <!--<button class="tablinks" onclick="opentab(event, 'Firmware')">Firmware Files</button>-->
+  <button class="tablinks" id="default" onclick="opentab(event, 'Firmware')">Firmware</button>
   <button class="tablinks" onclick="opentab(event, 'SD')">Sd Files</button>
+  <button class="tablinks" onclick="opentab(event, 'ntr')">NTR Boot Mode</button>
   <button class="tablinks" onclick="opentab(event, 'FAQ')">FAQ's and Troubleshooting</button>
 </div>
 
 <div id="byo" class="tabcontent">
 	<h2 align="center"><font color="#8bbd04"> DSPico_B.Y.O </font></h2>
+	<h3 align="center"><font color="red"> Recommended for advanced users</font></h3>
 	<hr>
 	<p> DSpico_B.Y.O (Build your Own) and is a legal, publicly shareable, DSpico firmware that you can distribute and flash on your DSPico. All you need to run the dspico with this firmware is at least default.nds by following the build instructions on the LNH github.</p>
 <h4> DSpico_B.Y.O: <a href="https://www.mediafire.com/file/w8k1l89vvtv39l3/DSpico_B.Y.O.uf2/file" target="_blank" rel="noopener noreferrer">Download</a></h4>
@@ -98,7 +98,7 @@ You may use any combinations of the roms in this chart and the table below, show
 		<tr>
 			<td>dsimode.nds</td>
 			<td>WRFU Tester v0.60.srl</td>
-			<td>Rename Rom.<br> <b>SHA-1:</b> <i>2d65fb7a0c62a4f08954b98c95f42b804fccfd26</i></td>
+			<td>Rename Rom.<br> <b>SHA-1:</b> <code><i>2d65fb7a0c62a4f08954b98c95f42b804fccfd26</i></code></td>
 		</tr>
 		<tr>
 			<td>ntrboot.nds</td>
@@ -111,12 +111,6 @@ You may use any combinations of the roms in this chart and the table below, show
 			<td>Renamed Rom</td>
 		</tr>
 	</table> <br>
-<!--
-<h3> Preview </h3>
-  <video width="320" height="240" controls>
-  <source src="assets/media/preview.mov" type="video/mp4">
-</video>
-<h3><font color="red"> Video is a preview only and not representive of final product. Some differences may occur between boards.</font></h3>-->
 </div>
 
 <div id="Firmware" class="tabcontent">
@@ -147,13 +141,13 @@ You may use any combinations of the roms in this chart and the table below, show
     	</tr>
     	<tr>
     		<td><a href="https://www.mediafire.com/file/5cgpdohw820291e/DSpico_-_Hybrid_-_1.3.1.uf2/file" target="_blank" rel="noopener noreferrer">Hybrid Firmware</a></td>
-    		<td>Ver 1.3.1</td>
-    		<td>Commit Tags;<br><b> BL:</b><i>`29671d0`</i><b> FW:</b><i>`177dd8d`</i><br> <b>SHA1:</b> <i>9a5d090da58e7320c58d0ce73a6c800206203bd3</i><br>Repostirory can be found <a href="https://github.com/Ansem-Xae/dspico-firmware-antr" target="_blank" rel="noopener noreferrer">here</a></td>
+    		<td>Ver <code>1.3.1</code></td>
+    		<td>Commit Tags;<br><b> BL:</b><i><code>`29671d0`</code></i><b> FW:</b><i><code>`177dd8d`</code></i><br> <b>SHA1:</b> <code><i>9a5d090da58e7320c58d0ce73a6c800206203bd3</i></code><br>Repostirory can be found <a href="https://github.com/Ansem-Xae/dspico-firmware-antr" target="_blank" rel="noopener noreferrer">here</a></td>
     	</tr>
     	<tr>
     		<td><a href="https://www.mediafire.com/file/2jvttvoxkmwghru/DSpico_-_Wrfuxxed_-_1.3.1.uf2/file" target="_blank" rel="noopener noreferrer">Wrfuxxed Firmware</a></td>
-    		<td>Ver 1.3.1</td>
-    		<td> Commit Tags;<br><b> BL:</b><i>`29671d0`</i><b> FW:</b><i>`177dd8d`</i><br>  <b>SHA1:</b><i> fdfbfa7076185c50d0d97a9acf8e9187adb6ba32</i><br>Repostirory can be found <a href="https://github.com/Ansem-Xae/dspico-firmware-antr" target="_blank" rel="noopener noreferrer">here</a></td>
+  			<td>Ver <code>1.3.1</code></td>
+    		<td>Commit Tags;<br><b> BL:</b><i><code>`29671d0`</code></i><b> FW:</b><i><code>`177dd8d`</code></i><br> <b>SHA1:</b> <code><i>3239c130d103e7a6efe87805e912258597b03265</i></code><br>Repostirory can be found <a href="https://github.com/Ansem-Xae/dspico-firmware-antr" target="_blank" rel="noopener noreferrer">here</a></td>
     	</tr>
     	<tr>
     		<td><a href="https://www.mediafire.com/folder/mfuveka3y4j2k/Old+Builds" target="_blank" rel="noopener noreferrer"> Previous Builds</a></td>
@@ -181,7 +175,7 @@ You may use any combinations of the roms in this chart and the table below, show
 		<tr>
 			<td> Main Branch SD Files </td>
 			<td> <a href="https://www.mediafire.com/folder/0qtw3evkma1t3/DSPico+Sd+Card+Files" target="_blank" rel="noopener noreferrer">SD Card Files</a></td>
-			<td> Recommended. Build Ver 1.4.1</td>
+			<td> Recommended. Build Ver: <code>1.4.1</code></td>
 		</tr>
 		<tr>
 			<td> Old Builds </td>
@@ -195,6 +189,44 @@ You may use any combinations of the roms in this chart and the table below, show
 			<td> Extracted DSi Nand files for the DSPico DSi Emunand. <br> Included in main build by default.</td>
 		</tr>
 	</table>
+</div>
+
+<div id="ntr" class="tabcontent">
+  	<h3 align="center"> NTR Boot Guide for Recovery and Modding of 3ds family consoles.</h3>
+  	<h5 align="center"><font color="orange">This guide was written for 3ds, thus you will need to follow the DSi ntrguide <a href="https://wiki.ds-homebrew.com/ds-index/ntrboot?tab=dsi#running-ntrboot "target="_blank" rel="noopener noreferrer">instead</a></font></h5>
+  	<hr>
+  <p>
+  	<ol>
+		<li>Download my 3ds <a href="https://www.mediafire.com/file/yfo17486khtzhic/3DS_NTR_Recovery_Pack.7z/file" target="_blank" rel="noopener noreferrer">Recovery Pack</a></li>
+		<li>Extract the contents to the root of your 3ds <b>Console SD card</b>.<br>
+			<b><i><font color="red">This is not your DSPico Micro SD Card</font></i></b></li>
+			<ul>
+				<li>It is <i><b>vital</b></i> your console SD card is in fat32 format</li>
+			</ul>
+		<li>Insert the sd card back into the console</li>
+		<li>Insert your DSPico into your 3ds console.</li>
+		<li>Power on your 3ds. It should automatically load to GodMode9</li>
+			<ul>
+				<li>If it doesn't please try:<br>
+					<ul>
+						<li>Placing the magnet on your console to trigger the sleep sensor and holding<br><code><b>X</b>+<b>Start</b>+<b>Select</b>+<b>Power</b></code></li>
+					</ul>
+				<li>Failing that, please follow the <a href="https://3ds.hacks.guide/installing-boot9strap-(ntrboot).html#section-ii-ntrboot" target="_blank" rel="noopener noreferrer">3ds.hacks.guide</a> section for NTR boot.</li>
+			</ul>
+		<li>From here you can either:</li>
+			<ul>
+				<li>A) Install Boot9Strap + Luma3DS</li>
+					<ul>
+						<li>If you choose to mod your 3ds with B9S and luma navigate to <code>`<b>SD Card\Payloads\</b>`</code> and launch <code>'<b>SafeB9SInstaller.firm</b>`</code></li>
+		<li>Then follow the rest of this section of <a href="https://3ds.hacks.guide/installing-boot9strap-(ntrboot).html#section-iii-installing-boot9strap" target="_blank" rel="noopener noreferrer">3ds.hacks.guide</a></li>
+					</ul>
+				<li>B) Restore your previous nand dump.</li>
+					<ul>
+						<li>For restoring a previous nand dump using gm9 follow this <a href="https://3ds.hacks.guide/godmode9-usage.html#restoring-a-nand-backup" target="_blank" rel="noopener noreferrer">guide</a></li>
+					</ul>
+			</ul>
+		</ol>
+  </p>
 </div>
 
 <div id="FAQ" class="tabcontent">
@@ -226,8 +258,8 @@ You may use any combinations of the roms in this chart and the table below, show
 		<tr>
 			<td> I use a mac and my dspico isn't loading properly</td>
 			<td> The dreaded mac files strike again do the following:<br>
-			1) Enter this command in your terminal: `<i>dot_clean -mv /Volumes/YOUR_SD_CARD_NAME</i>`.<br>
-			2) Folow this <a href="https://piotrkrzyzek.com/how-to-delete-all-hidden-files-from-mac-os-removal-media-sd-cards-usb-keys-etc/" target="_blank" rel="noopener noreferrer">guide</a>.</td>
+			1) Enter this command in your terminal: `<i><code>dot_clean -mv /Volumes/YOUR_SD_CARD_NAME</code></i>`.<br>
+			2) Follow this <a href="https://piotrkrzyzek.com/how-to-delete-all-hidden-files-from-mac-os-removal-media-sd-cards-usb-keys-etc/" target="_blank" rel="noopener noreferrer">guide</a>.</td>
 		</tr>
 		<tr>
 			<td> I want to change the DSPico cart logo/title on my ds</td>

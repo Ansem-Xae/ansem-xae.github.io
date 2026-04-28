@@ -32,7 +32,9 @@ body {
 }
 
 
-
+hr {
+  color: #d3025e;
+}
 
 .sidebar {
     height: 100%; /* Full height */
@@ -79,15 +81,15 @@ main {
 
 
   .vl {
-    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    border-left: 3px solid #d3025e; /* Defines the line: width, style, color */
     height: auto;              /* Defines the length of the line */
     padding-left: 5%;
     padding-right: 5%;
     margin-left: auto;
-        overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden; /* Disable horizontal scroll */
   }
   .vl2 {
-    border-left: 3px solid grey; /* Defines the line: width, style, color */
+    border-left: 3px solid #d3025e; /* Defines the line: width, style, color */
     height: auto;              /* Defines the length of the line */
     padding-left: 5%;
     padding-right: 5%;
@@ -137,11 +139,13 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     width: 85%; 
+    
 }
 .nav-links {
     list-style-type: none; /* Remove bullet points */
     margin: 0;
     padding: 0;
+    gap: 1%;
     display: flex; /* Use flexbox for horizontal layout */
     justify-content: space-around; /* Distribute items evenly */
 }
@@ -154,6 +158,36 @@ blockquote {
     font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
 }
 .nav-links li a:hover {
+    background-color: #d3025e; /* Change background on hover */
+    color: black;
+    cursor: pointer;
+}
+
+.navbar3 {
+    background-color: #333; /* Dark background for the bar */
+    overflow: hidden; /* Clear floats if using float method */
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%; 
+    
+}
+.nav-links2 {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    gap: 1%;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+}
+.nav-links2 li a {
+    display: block; /* Make the whole area clickable and styleable */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 8px 8px; /* Adds space inside the links *//* Space around the text */
+    text-decoration: none; /* Remove underlines */
+    font-family: Verdana, Tahoma, 'Open-Dyslexic', sans-serif;
+}
+.nav-links2 li a:hover {
     background-color: #d3025e; /* Change background on hover */
     color: black;
     cursor: pointer;
