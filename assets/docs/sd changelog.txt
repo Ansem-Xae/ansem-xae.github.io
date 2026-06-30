@@ -1,5 +1,26 @@
 SD CHANGELOG
 
+Version 1.5.0
+- Updated pico loader to latest 1.7.1 release
+	-DSPico Loader v1.7.1 
+	 -Fixed
+		Arm9 initialization when booting homebrew in DSi mode
+
+	-DSPico Loader v1.7.0
+	 -Added
+		DMA card read support for the AK2/AKRPG/R4iDSN platform - by @lifehackerhansol
+		DMA card read support for the DSTT platform - by @lifehackerhansol
+		DMA card read support for the M3DS platform - by @lifehackerhansol
+		AP patches for NRL Mascot Mania and AFL Mascot Manor - by @taxicat1
+		Houkago Shounen race condition patch - by @taxicat1
+		Race condition patch for Ultimate Mortal Kombat (USA) and (Europe) - by @taxicat1
+		Card read patch for Minna no Mahjong DS - by @taxicat1
+		Ability to detect DSi roms with missing DSi parts and run them in DS mode
+
+	 -Fixed
+		DMA card read offsets for Pokemon Ranger (EU) - by @taxicat1
+		Split DSTT SD read to multiple patches to avoid running out of space - by @lifehackerhanso 
+
 Version 1.4.1
 - Updated _picoboot.nds to latest official 1.3.0 version with patch for IGR+SR
 
